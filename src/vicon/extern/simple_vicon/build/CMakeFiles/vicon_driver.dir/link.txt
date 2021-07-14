@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvicon_driver.a CMakeFiles/vicon_driver.dir/src/ViconDriver.cpp.o
+/usr/bin/ranlib libvicon_driver.a

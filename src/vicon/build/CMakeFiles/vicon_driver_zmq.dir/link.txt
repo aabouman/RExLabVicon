@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvicon_driver_zmq.a CMakeFiles/vicon_driver_zmq.dir/src/ViconDriverZMQ.cpp.o CMakeFiles/vicon_driver_zmq.dir/Users/alexanderbouman/Desktop/GradSchool/RExLab/RExQuad/MocapTest/gen/msgs/message.pb.cc.o
+/usr/bin/ranlib libvicon_driver_zmq.a
