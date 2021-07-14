@@ -1,27 +1,9 @@
-# using Clang
-# using Clang.Generators
-#
-#
-# const MESSAGE_H = ["$(@__DIR__)/../../Arduino/IMU_PacketSerial/messages.h"]
-#
-# options = load_options("$(@__DIR__)/generator.toml")
-#
-# args = get_default_args()
-#
-# ctx = create_context(MESSAGE_H, args, options)
-#
-# build!(ctx)
-
-
-# TODO: add regenerate warning
-
-
 function generate()
-    msg_loc = "message.proto"
+    msg_name = "vicon_message.proto"
 
     # Build the protocol buffer messages
-    run(`protoc -I=. --proto_path=$(@__DIR__)/proto --cpp_out=$(@__DIR__)/msgs $(msg_loc)`);
-    run(`protoc -I=. --plugin=$(homedir())/.julia/packages/ProtoBuf/TYEdo/plugin/protoc-gen-julia --proto_path=$(@__DIR__)/proto --julia_out=$(@__DIR__)/msgs $(msg_loc)`)
+    run(`protoc -I=. --proto_path=$(@__DIR__)/proto --cpp_out=$(@__DIR__)/msgs $(msg_name)`);
+    run(`protoc -I=. --plugin=$(homedir())/.julia/packages/ProtoBuf/TYEdo/plugin/protoc-gen-julia --proto_path=$(@__DIR__)/proto --julia_out=$(@__DIR__)/msgs $(msg_name)`)
 
     
 

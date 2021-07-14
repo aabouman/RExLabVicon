@@ -1,1 +1,0 @@
-/usr/local/bin/g++-11 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/link_test.dir/link_test.cc.o CMakeFiles/link_test.dir/empty.cc.o -o link_test  third_party/gtest-1.7.0/libgtest.a third_party/gtest-1.7.0/libgtest_main.a third_party/gtest-1.7.0/libgtest.a 
